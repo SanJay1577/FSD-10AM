@@ -42,7 +42,7 @@ console.log("shift", arr);
 console.log("-----Slice---------");
 console.log("org", arr);
 //[1, 3, 5, 7, 9]->[3, 5, 7]
-const slicedArr = arr.slice(1, 4);
+const slicedArr = arr.slice(1, 3);
 console.log("sliced array", slicedArr);
 
 //Splice
