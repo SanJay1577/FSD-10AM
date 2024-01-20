@@ -158,3 +158,4 @@ console.log(raj);
 console.log(raj.completed_task);
 raj.getTaskPercentage();
 raj.getTaskDetails();
+ 
