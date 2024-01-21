@@ -183,3 +183,32 @@ const protoMap = data.myMap((value, index, accARR) => {
   return (value.task += 5);
 });
 console.log(protoMap);
+
+console.log("--------MRF-----------");
+
+const mrf_arr = [1, 2, 3, 4, 5, 6, 7];
+//map
+const sum_of_oddd = mrf_arr
+  .map((val, idx, accArr) => {
+    console.log(`
+value : ${val}
+index: ${idx}
+accArray : ${accArr}
+`);
+    return (val += 3); //[4, 5, 6, 7, 8, 9, 10]
+  })
+  .filter((val, idx, accArr) => val % 2 == 0)
+  .reduce((acc, val, idx, accArr) => {
+    return (acc += val);
+  }, 0);
+
+console.log(sum_of_oddd);
+
+// function return_array() {
+//   return [1, 3, 5, 7];
+// }
+// const arr1 = [1, 3, 5, 7]
+// return_array() // [1, 3, 5, 7]
+
+// arr1.map(()=>{})
+// return_array().map(()=>{})
