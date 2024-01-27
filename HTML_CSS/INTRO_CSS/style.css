@@ -1,0 +1,75 @@
+#head1 {
+  color: yellowgreen !important;
+  text-align: center;
+}
+
+#head2 {
+  color: green;
+  text-align: end !important ;
+}
+
+/* LIST Property */
+ul {
+  list-style-type: disc;
+  line-height: 50px;
+}
+
+/* FONT Property */
+.para-font {
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+/* Text Property */
+.para-text {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 42px;
+  letter-spacing: 5px;
+}
+/* Border Property */
+.para-border {
+  /* border-width border-style borer-color */
+  border: 10px solid black;
+  border-radius: 5px;
+}
+
+img {
+  width: 600px;
+  object-fit: cover;
+}
+
+a {
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.inline {
+  display: inline;
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.block {
+  display: block;
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 50px;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 75px;
+  height: 30px;
+}
