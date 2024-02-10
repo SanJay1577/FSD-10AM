@@ -7,7 +7,7 @@
   gap: 0.5rem;
   flex-direction: row;
   flex-wrap: wrap;
-  /* Y axis direction */
+  /* x axis direction */
   /* justify-content: center; */
   /* justify-content: space-around; */
   /* justify-content: space-between; */
@@ -15,7 +15,7 @@
   /* justify-content: flex-start; */
   /* justify-content: flex-end; */
 
-  /* X axis direction */
+  /* y axis direction */
   /* we use align-content when you use wrap */
   /* align-content: center; */
   /* align-content: space-around; */
