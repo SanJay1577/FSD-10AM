@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+:root {
+  font-size: 20px;
+  --maiin-text-color: blue;
+}
+
+.overflow-conatiner {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 5px;
+  background-color: bisque;
+  font-family: "Protest Revolution", sans-serif;
+  /* if we need in directional way we can use -x and -y */
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+  /* overflow: auto; */
+  /* overflow: visible; */
+  overflow: hidden;
+  /* display: none; */
+  /* visibility: hidden; */
+}
+.mes-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 250px;
+  height: 250px;
+  margin: 17px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+/* Measurements 
+cm,mm,in -> absoulte measurements
+  1px pixels->(1/96 of 1-inch)
+  1pt points ->(1/72 of 1-inch)
+  pc picas(1/12 of 1 inch)1
+  vw-viewwidth
+  vh- viewheight
+  16px=1pc */
+
+/* em -> emphemeral unit 
+  rem -> roor of em */
+/* 1em = font-size of the parent */
+
+/* html {
+  font-size: 20px;
+} */
+
+.con-1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.con-2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--maiin-text-color);
+}
