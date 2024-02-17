@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: cadetblue;
+  scroll-behavior: smooth;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  background-color: #011414;
+  border-left: 15px;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: whitesmoke;
+}
+
+.big-nav {
+  display: none;
+}
+.icon {
+  background-color: inherit;
+}
+.btn {
+  border: none;
+  background-color: rgb(77, 71, 71);
+  border-radius: 50%;
+  padding: 7px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: darkgrey;
+  color: #011414;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 90vh;
+}
+a {
+  text-decoration: none;
+}
+#main-container {
+  border: 1px solid black;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
+  /* grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 300px 200px 100px; */
+  /* place-items: center; */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.template {
+  background-color: antiquewhite;
+  border: 1px solid black;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template:
+    "header header header" 10vh
+    "slider main main" 70vh;
+}
+.header {
+  background-color: aqua;
+  grid-area: header;
+}
+.slider {
+  background-color: burlywood;
+  grid-area: slider;
+}
+.main {
+  background-color: rgb(22, 94, 97);
+  grid-area: main;
+}
+.box {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 426px) {
+  .nav-bar {
+    bottom: unset;
+    top: 0;
+    justify-content: end;
+    gap: 2rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 12px;
+  }
+  .big-nav {
+    display: block;
+    background-color: inherit;
+  }
+  .btn {
+    border-radius: 5px;
+    padding: 10px;
+    width: 70px;
+  }
+  .icon {
+    display: none !important;
+  }
+}
